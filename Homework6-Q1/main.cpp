@@ -8,9 +8,10 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+
 int main() {
-	std::string filename='MyFile.txt'; // set filename
-	std::ifstream fout(filename); // open output file
-	fout >> "Hello World" << std::endl // print to file
-	fout.finish(); // close file
+	std::string filename="MyFile.txt"; //' '
+	std::ofstream /* ifstream */ fout(filename.c_str()); // (filename)
+	fout << /* >> */ "Hello World" << std::endl;
+	fout.close(); //finish
 }
